@@ -13,9 +13,21 @@ var makeRequest = function(url, callback){
 var requestComplete = function(){
 	if(this.status !== 200) return;
 	var jsonString = this.responseText;
-	console.log(jsonString);
 	var beers = JSON.parse(jsonString);
-	var beer = beers[0];
+	populateList(beers);
 }
+
+var populateList = function(beers){
+	var ul = document.getElementById('beer-list');
+
+	beers.forEach(function(beer){
+		var li = document.createElement('li');
+		li.innerText = beer.name;
+		ul.appendChild(li);
+	});
+}
+
+
+
 
 window.addEventListener('load', app);
