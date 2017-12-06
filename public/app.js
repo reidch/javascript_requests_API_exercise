@@ -30,14 +30,4 @@ var populateList = function(beers){
 	};
 }
 
-// var addImage = function(beer){
-// 	var nameLi = document.getElementById('beer-name');
-// 	var imageLi = document.createElement('li');
-// 	imageLi.innerText = beer.image_url;
-// 	nameLi.appendChild(imageLi);
-// }
-
-
-
-
 window.addEventListener('load', app);
