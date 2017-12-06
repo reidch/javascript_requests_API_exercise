@@ -20,12 +20,22 @@ var requestComplete = function(){
 var populateList = function(beers){
 	var ul = document.getElementById('beer-list');
 
-	beers.forEach(function(beer){
-		var li = document.createElement('li');
-		li.innerText = beer.name;
-		ul.appendChild(li);
-	});
+	for(var beer of beers){
+		var nameLi = document.createElement('li');
+		nameLi.innerText = beer.name;
+		var imageLi = document.createElement('img');
+		imageLi.src = beer.image_url;
+		nameLi.appendChild(imageLi);
+		ul.appendChild(nameLi);
+	};
 }
+
+// var addImage = function(beer){
+// 	var nameLi = document.getElementById('beer-name');
+// 	var imageLi = document.createElement('li');
+// 	imageLi.innerText = beer.image_url;
+// 	nameLi.appendChild(imageLi);
+// }
 
 
 
