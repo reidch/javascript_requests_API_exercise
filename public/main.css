@@ -1,6 +1,10 @@
 main{
-  width: 300px;
+  width: 400px;
   margin: 0 auto;
+}
+
+main{
+  background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX10266973.jpg");
 }
 
 input{
@@ -13,4 +17,25 @@ input{
 
 .beers{
   padding: 5px;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
+
+h1, li{
+  color: #45BBE7;
+  text-shadow: 0 0 4px #000000;
+}
+
+h1{
+  font-family: 'Lobster', cursive;
+  font-size: 45px;
+  align-content: center;
+}
+
+li{
+  font-family: 'Teko', sans-serif;
+  font-size: 32px;
 }
